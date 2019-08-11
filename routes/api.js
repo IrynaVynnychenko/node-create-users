@@ -19,10 +19,8 @@ router.post('/', function(req, res, next) {
     else {
         try {
             const fileData = JSON.parse(data);
-
             // 3. Append the object you want
             fileData.push(obj);
-
             //4. Write the file back out
             return fs.writeFile(file, JSON.stringify(fileData), error => console.error)
         } catch(exception) {
