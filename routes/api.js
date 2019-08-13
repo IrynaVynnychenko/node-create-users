@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var fs = require('fs');
+const express = require('express');
+const router = express.Router();
+const fs = require('fs');
 
 /* GET users listing. */
 router.post('/', function(req, res, next) {

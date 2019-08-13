@@ -1,11 +1,11 @@
-var express = require('express');
-var path = require('path');
-var app = express();
+const express = require('express');
+const path = require('path');
+const app = express();
 const bodyParser = require('body-parser');
 
-var indexRouter = require('./routes/index');
-var apiRouter = require('./routes/api');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const apiRouter = require('./routes/api');
+const usersRouter = require('./routes/users');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
